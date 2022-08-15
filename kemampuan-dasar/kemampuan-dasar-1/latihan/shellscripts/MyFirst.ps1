@@ -1,0 +1,1 @@
+﻿& "C:\Coding-PGT\kemampuan-dasar-1\latihan\powershellscripts\My First Script.ps1"

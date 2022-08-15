@@ -1,0 +1,1638 @@
+1. Ping - untuk menguji kemampuan komputer sumber dalam mencapai atau menghubungi komputer tujuan yang ditentukan. 
+2. Net print - untuk mengirimkan pesan singkat kepada host dalam suatu LAN dengan perintah net send.
+3. Tracert - untuk menunjukkan beberapa detail tentang jalur yang diambil sebuah paket dari komputer atau perangkat yang Kamu gunakan untuk tujuan apa pun yang Kamu tentukan.
+4. Nslookup - untuk melihat informasi seputar Domain Name Systems (DNS) pada sebuah domain diinternet/intranet.
+5. Telnet - untuk mengakses komputer (server / host) dari jarak jauh (remote login).
+6. Ipconfig -  untuk mengetahui alamat IP dari komputer yang anda gunakan.
+7. Dir - untuk melihat daftar file dan sub-direktori yang ada di dalam sebuah direktori.
+8. Attrib - untuk mengubah attribut.
+9. Netstat - untuk menampilkan data statistik koneksi jaringan dari dan ke komputer yang sedang digunakan.
+10. Route - untuk membuat jalur baru (routing) pada komputer ke suatu jaringan, biasanya pada LAN atau WAN.
+11. Color - untuk merubah warna ttulisan
+12. Klist - Daftar menjalankan aplikasi dan services
+13. Mode - untuk melihat status pada device
+14. path - Menampilkan atau menetapkan path pencarian untuk file executable
+15. Regedit - Impor atau ekspor pengaturan registry
+16. Schtasks -  Jadwal perintah untuk dijalankan pada waktu tertentu
+17. Tree - tampilan grafis struktur folder
+18. Type - Menampilkan isi dari file teks
+19. Verify - Verifikasi apakah file disimpan dengan benar pada disk
+20. Time - Menampilkan atau mengatur waktu sistem 
+
+
+Microsoft Windows [Version 10.0.19044.1766]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\WINDOWS\System32>ping
+
+Usage: ping [-t] [-a] [-n count] [-l size] [-f] [-i TTL] [-v TOS]
+            [-r count] [-s count] [[-j host-list] | [-k host-list]]
+            [-w timeout] [-R] [-S srcaddr] [-c compartment] [-p]
+            [-4] [-6] target_name
+
+Options:
+    -t             Ping the specified host until stopped.
+                   To see statistics and continue - type Control-Break;
+                   To stop - type Control-C.
+    -a             Resolve addresses to hostnames.
+    -n count       Number of echo requests to send.
+    -l size        Send buffer size.
+    -f             Set Don't Fragment flag in packet (IPv4-only).
+    -i TTL         Time To Live.
+    -v TOS         Type Of Service (IPv4-only. This setting has been deprecated
+                   and has no effect on the type of service field in the IP
+                   Header).
+    -r count       Record route for count hops (IPv4-only).
+    -s count       Timestamp for count hops (IPv4-only).
+    -j host-list   Loose source route along host-list (IPv4-only).
+    -k host-list   Strict source route along host-list (IPv4-only).
+    -w timeout     Timeout in milliseconds to wait for each reply.
+    -R             Use routing header to test reverse route also (IPv6-only).
+                   Per RFC 5095 the use of this routing header has been
+                   deprecated. Some systems may drop echo requests if
+                   this header is used.
+    -S srcaddr     Source address to use.
+    -c compartment Routing compartment identifier.
+    -p             Ping a Hyper-V Network Virtualization provider address.
+    -4             Force using IPv4.
+    -6             Force using IPv6.
+
+
+C:\WINDOWS\System32>net print
+The syntax of this command is:
+
+NET
+    [ ACCOUNTS | COMPUTER | CONFIG | CONTINUE | FILE | GROUP | HELP |
+      HELPMSG | LOCALGROUP | PAUSE | SESSION | SHARE | START |
+      STATISTICS | STOP | TIME | USE | USER | VIEW ]
+
+C:\WINDOWS\System32>tracert
+
+Usage: tracert [-d] [-h maximum_hops] [-j host-list] [-w timeout]
+               [-R] [-S srcaddr] [-4] [-6] target_name
+
+Options:
+    -d                 Do not resolve addresses to hostnames.
+    -h maximum_hops    Maximum number of hops to search for target.
+    -j host-list       Loose source route along host-list (IPv4-only).
+    -w timeout         Wait timeout milliseconds for each reply.
+    -R                 Trace round-trip path (IPv6-only).
+    -S srcaddr         Source address to use (IPv6-only).
+    -4                 Force using IPv4.
+    -6                 Force using IPv6.
+
+C:\WINDOWS\System32>nslookup
+DNS request timed out.
+    timeout was 2 seconds.
+Default Server:  UnKnown
+Address:  192.168.126.24
+
+C:\Users\afysa>telnet
+'telnet' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\afysa>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter WiFi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::e842:daac:ca98:4cc8%10
+   IPv4 Address. . . . . . . . . . . : 192.168.126.78
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.126.24
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+C:\Users\afysa>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 024C-B7A7
+
+ Directory of C:\Users\afysa
+
+05/08/2022  00:03    <DIR>          .
+05/08/2022  00:03    <DIR>          ..
+05/08/2022  00:03    <DIR>          3D Objects
+08/04/2022  15:40    <DIR>          ansel
+05/08/2022  00:03    <DIR>          Contacts
+31/03/2022  08:10    <DIR>          Documents
+11/08/2022  14:08    <DIR>          Downloads
+05/08/2022  00:03    <DIR>          Favorites
+05/08/2022  00:03    <DIR>          Links
+05/08/2022  00:03    <DIR>          Music
+11/08/2022  14:06    <DIR>          OneDrive
+31/03/2022  08:10    <DIR>          Pictures
+05/08/2022  00:03    <DIR>          Saved Games
+05/08/2022  00:03    <DIR>          Searches
+05/08/2022  00:03    <DIR>          Videos
+               0 File(s)              0 bytes
+              15 Dir(s)  171.413.561.344 bytes free
+
+C:\Users\afysa>attrib
+A   H   I            C:\Users\afysa\NTUSER.DAT
+A  SH                C:\Users\afysa\ntuser.dat.LOG1
+A  SH                C:\Users\afysa\ntuser.dat.LOG2
+A  SH                C:\Users\afysa\NTUSER.DAT{95ea0b2f-1416-11ed-9d15-e30eb85c1560}.TM.blf
+A  SH                C:\Users\afysa\NTUSER.DAT{95ea0b2f-1416-11ed-9d15-e30eb85c1560}.TMContainer00000000000000000001.regtrans-ms
+A  SH                C:\Users\afysa\NTUSER.DAT{95ea0b2f-1416-11ed-9d15-e30eb85c1560}.TMContainer00000000000000000002.regtrans-ms
+   SH                C:\Users\afysa\ntuser.ini
+
+C:\Users\afysa>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:63606        3dns:65001             ESTABLISHED
+  TCP    127.0.0.1:63609        3dns:63794             ESTABLISHED
+  TCP    127.0.0.1:63617        3dns:63627             ESTABLISHED
+  TCP    127.0.0.1:63627        3dns:63617             ESTABLISHED
+  TCP    127.0.0.1:63794        3dns:63609             ESTABLISHED
+  TCP    127.0.0.1:65001        3dns:63606             ESTABLISHED
+  TCP    192.168.126.78:57706   140.82.114.26:https    ESTABLISHED
+  TCP    192.168.126.78:57854   5.252.178.15:759       ESTABLISHED
+  TCP    192.168.126.78:57863   20.50.80.210:https     ESTABLISHED
+  TCP    192.168.126.78:57871   23.209.207.212:http    TIME_WAIT
+  TCP    192.168.126.78:57872   8.241.166.126:http     TIME_WAIT
+  TCP    192.168.126.78:57873   18.161.49.18:https     ESTABLISHED
+  TCP    192.168.126.78:57874   54.192.116.29:https    ESTABLISHED
+  TCP    192.168.126.78:57877   20.189.173.3:https     TIME_WAIT
+  TCP    192.168.126.78:63656   20.198.119.84:https    ESTABLISHED
+  TCP    192.168.126.78:63714   74.125.24.188:5228     ESTABLISHED
+  TCP    192.168.126.78:63847   23.43.248.138:https    CLOSE_WAIT
+  TCP    192.168.126.78:63848   23.43.248.138:https    CLOSE_WAIT
+  TCP    192.168.126.78:63849   23.43.248.138:https    CLOSE_WAIT
+  TCP    192.168.126.78:63850   23.43.248.138:https    CLOSE_WAIT
+  TCP    192.168.126.78:63851   117.18.237.29:http     CLOSE_WAIT
+  TCP    192.168.126.78:63857   108.138.141.61:https   CLOSE_WAIT
+  TCP    192.168.126.78:63858   18.161.52.28:http      CLOSE_WAIT
+  TCP    192.168.126.78:63859   18.161.52.173:http     CLOSE_WAIT
+  TCP    192.168.126.78:63860   23.43.248.26:https     CLOSE_WAIT
+  TCP    192.168.126.78:63862   18.161.52.26:http      CLOSE_WAIT
+  TCP    192.168.126.78:63863   23.43.248.26:https     CLOSE_WAIT
+  TCP    192.168.126.78:63866   23.219.191.200:https   ESTABLISHED
+  TCP    192.168.126.78:63867   23.219.191.200:https   ESTABLISHED
+  TCP    192.168.126.78:63997   20.198.119.143:https   ESTABLISHED
+
+C:\Users\afysa>route
+
+Manipulates network routing tables.
+
+ROUTE [-f] [-p] [-4|-6] command [destination]
+                  [MASK netmask]  [gateway] [METRIC metric]  [IF interface]
+
+  -f           Clears the routing tables of all gateway entries.  If this is
+               used in conjunction with one of the commands, the tables are
+               cleared prior to running the command.
+
+  -p           When used with the ADD command, makes a route persistent across
+               boots of the system. By default, routes are not preserved
+               when the system is restarted. Ignored for all other commands,
+               which always affect the appropriate persistent routes.
+
+  -4           Force using IPv4.
+
+  -6           Force using IPv6.
+
+  command      One of these:
+                 PRINT     Prints  a route
+                 ADD       Adds    a route
+                 DELETE    Deletes a route
+                 CHANGE    Modifies an existing route
+  destination  Specifies the host.
+  MASK         Specifies that the next parameter is the 'netmask' value.
+  netmask      Specifies a subnet mask value for this route entry.
+               If not specified, it defaults to 255.255.255.255.
+  gateway      Specifies gateway.
+  interface    the interface number for the specified route.
+  METRIC       specifies the metric, ie. cost for the destination.
+
+All symbolic names used for destination are looked up in the network database
+file NETWORKS. The symbolic names for gateway are looked up in the host name
+database file HOSTS.
+
+If the command is PRINT or DELETE. Destination or gateway can be a wildcard,
+(wildcard is specified as a star '*'), or the gateway argument may be omitted.
+
+If Dest contains a * or ?, it is treated as a shell pattern, and only
+matching destination routes are printed. The '*' matches any string,
+and '?' matches any one char. Examples: 157.*.1, 157.*, 127.*, *224*.
+
+Pattern match is only allowed in PRINT command.
+Diagnostic Notes:
+    Invalid MASK generates an error, that is when (DEST & MASK) != DEST.
+    Example> route ADD 157.0.0.0 MASK 155.0.0.0 157.55.80.1 IF 1
+             The route addition failed: The specified mask parameter is invalid. (Destination & Mask) != Destination.
+
+Examples:
+
+    > route PRINT
+    > route PRINT -4
+    > route PRINT -6
+    > route PRINT 157*          .... Only prints those matching 157*
+
+    > route ADD 157.0.0.0 MASK 255.0.0.0  157.55.80.1 METRIC 3 IF 2
+             destination^      ^mask      ^gateway     metric^    ^
+                                                         Interface^
+      If IF is not given, it tries to find the best interface for a given
+      gateway.
+    > route ADD 3ffe::/32 3ffe::1
+
+    > route CHANGE 157.0.0.0 MASK 255.0.0.0 157.55.80.5 METRIC 2 IF 2
+
+      CHANGE is used to modify gateway and/or metric only.
+
+    > route DELETE 157.0.0.0
+    > route DELETE 3ffe::/32
+
+C:\Users\afysa>color view
+Sets the default console foreground and background colors.
+
+COLOR [attr]
+
+  attr        Specifies color attribute of console output
+
+Color attributes are specified by TWO hex digits -- the first
+corresponds to the background; the second the foreground.  Each digit
+can be any of the following values:
+
+    0 = Black       8 = Gray
+    1 = Blue        9 = Light Blue
+    2 = Green       A = Light Green
+    3 = Aqua        B = Light Aqua
+    4 = Red         C = Light Red
+    5 = Purple      D = Light Purple
+    6 = Yellow      E = Light Yellow
+    7 = White       F = Bright White
+
+If no argument is given, this command restores the color to what it was
+when CMD.EXE started.  This value either comes from the current console
+window, the /T command line switch or from the DefaultColor registry
+value.
+
+The COLOR command sets ERRORLEVEL to 1 if an attempt is made to execute
+the COLOR command with a foreground and background color that are the
+same.
+
+Example: "COLOR fc" produces light red on bright white
+
+C:\Users\afysa>color 2
+
+C:\Users\afysa>klist
+
+Current LogonId is 0:0x67f0991
+
+Cached Tickets: (0)
+
+C:\Users\afysa>mode
+
+Status for device CON:
+----------------------
+    Lines:          9001
+    Columns:        120
+    Keyboard rate:  31
+    Keyboard delay: 1
+    Code page:      850
+
+
+C:\Users\afysa>path
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\afysa\AppData\Local\Microsoft\WindowsApps;
+
+C:\Users\afysa>pktmon
+pktmon <command> [OPTIONS | help]
+    Advanced packet capture and event collection.
+
+Commands
+    filter     Manage packet filters.
+    list       List packet processing components.
+
+    start      Start packet capture and event collection.
+    stop       Stop data collection.
+    status     Query current status.
+    unload     Unload PktMon driver.
+
+    counters   Display current packet counters.
+    reset      Reset packet counters to zero.
+
+    etl2txt    Convert log file to text format.
+    etl2pcap   Convert log file to pcapng format.
+    hex2pkt    Decode packet in hexadecimal format.
+
+    help       Show help text for specific command.
+               Example: pktmon start help
+
+
+C:\Users\afysa>schtasks
+
+Folder: \
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+AdobeAAMUpdater-1.0-MicrosoftAccount-afy 12/08/2022 02:00:00    Ready
+Microsoft Office 15 Sync Maintenance for N/A                    Ready
+NvBatteryBoostCheckOnLogon_{B2FE1952-018 N/A                    Ready
+NvDriverUpdateCheckDaily_{B2FE1952-0186- 12/08/2022 12:25:45    Ready
+NVIDIA GeForce Experience SelfUpdate_{B2 N/A                    Ready
+NvNodeLauncher_{B2FE1952-0186-46C3-BAEC- N/A                    Ready
+NvProfileUpdaterDaily_{B2FE1952-0186-46C 12/08/2022 12:25:44    Ready
+NvProfileUpdaterOnLogon_{B2FE1952-0186-4 N/A                    Ready
+NvTmMon_{B2FE1952-0186-46C3-BAEC-A80AA35 N/A                    Ready
+NvTmRepCR1_{B2FE1952-0186-46C3-BAEC-A80A 11/08/2022 18:25:44    Ready
+NvTmRepCR2_{B2FE1952-0186-46C3-BAEC-A80A 12/08/2022 00:25:44    Ready
+NvTmRepCR3_{B2FE1952-0186-46C3-BAEC-A80A 12/08/2022 06:25:44    Ready
+NvTmRep_{B2FE1952-0186-46C3-BAEC-A80AA35 12/08/2022 12:25:44    Ready
+OneDrive Reporting Task-S-1-5-21-3349424 12/08/2022 10:13:49    Ready
+OneDrive Standalone Update Task-S-1-5-21 12/08/2022 12:32:32    Ready
+Opera scheduled assistant Autoupdate 165 12/08/2022 15:17:18    Ready
+Opera scheduled Autoupdate 1650961035    12/08/2022 15:26:11    Ready
+PostponeDeviceSetupToast_S-1-5-21-334942 14/08/2022 09:12:51    Ready
+
+Folder: \Microsoft
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+INFO: There are no scheduled tasks presently available at your access level.
+
+Folder: \Microsoft\Office
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Office 15 Subscription Heartbeat         12/08/2022 04:50:02    Ready
+OfficeTelemetryAgentFallBack             N/A                    Ready
+OfficeTelemetryAgentLogOn                N/A                    Ready
+
+Folder: \Microsoft\OneCore
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+INFO: There are no scheduled tasks presently available at your access level.
+
+Folder: \Microsoft\Windows
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+INFO: There are no scheduled tasks presently available at your access level.
+
+Folder: \Microsoft\Windows\.NET Framework
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+.NET Framework NGEN v4.0.30319           N/A                    Ready
+.NET Framework NGEN v4.0.30319 64        N/A                    Ready
+.NET Framework NGEN v4.0.30319 64 Critic N/A                    Disabled
+.NET Framework NGEN v4.0.30319 Critical  N/A                    Disabled
+
+Folder: \Microsoft\Windows\Active Directory Rights Management Services Client
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+AD RMS Rights Policy Template Management N/A                    Disabled
+AD RMS Rights Policy Template Management N/A                    Ready
+
+Folder: \Microsoft\Windows\AppID
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+PolicyConverter                          N/A                    Disabled
+VerifiedPublisherCertStoreCheck          N/A                    Disabled
+
+Folder: \Microsoft\Windows\Application Experience
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Microsoft Compatibility Appraiser        12/08/2022 04:06:34    Ready
+ProgramDataUpdater                       N/A                    Ready
+StartupAppTask                           N/A                    Ready
+
+Folder: \Microsoft\Windows\ApplicationData
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+appuriverifierdaily                      N/A                    Ready
+appuriverifierinstall                    N/A                    Ready
+CleanupTemporaryState                    N/A                    Ready
+DsSvcCleanup                             N/A                    Ready
+
+Folder: \Microsoft\Windows\AppListBackup
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Backup                                   N/A                    Ready
+
+Folder: \Microsoft\Windows\AppxDeploymentClient
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Pre-staged app cleanup                   N/A                    Disabled
+
+Folder: \Microsoft\Windows\Autochk
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Proxy                                    N/A                    Ready
+
+Folder: \Microsoft\Windows\BitLocker
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+BitLocker Encrypt All Drives             N/A                    Ready
+BitLocker MDM policy Refresh             N/A                    Ready
+
+Folder: \Microsoft\Windows\Bluetooth
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+UninstallDeviceTask                      N/A                    Ready
+
+Folder: \Microsoft\Windows\BrokerInfrastructure
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+BgTaskRegistrationMaintenanceTask        N/A                    Ready
+
+Folder: \Microsoft\Windows\CertificateServicesClient
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+UserTask                                 N/A                    Ready
+UserTask-Roam                            N/A                    Ready
+
+Folder: \Microsoft\Windows\Chkdsk
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+ProactiveScan                            N/A                    Ready
+SyspartRepair                            N/A                    Ready
+
+Folder: \Microsoft\Windows\CloudExperienceHost
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+CreateObjectTask                         N/A                    Ready
+
+Folder: \Microsoft\Windows\Customer Experience Improvement Program
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Consolidator                             11/08/2022 18:00:00    Ready
+UsbCeip                                  N/A                    Ready
+
+Folder: \Microsoft\Windows\Data Integrity Scan
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Data Integrity Check And Scan            11/08/2022 23:55:37    Ready
+Data Integrity Scan                      N/A                    Ready
+Data Integrity Scan for Crash Recovery   N/A                    Ready
+
+Folder: \Microsoft\Windows\Defrag
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+ScheduledDefrag                          N/A                    Ready
+
+Folder: \Microsoft\Windows\Device Information
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Device                                   12/08/2022 04:10:13    Ready
+Device User                              N/A                    Ready
+
+Folder: \Microsoft\Windows\Diagnosis
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+RecommendedTroubleshootingScanner        N/A                    Ready
+Scheduled                                N/A                    Ready
+
+Folder: \Microsoft\Windows\DirectX
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+DirectXDatabaseUpdater                   N/A                    Ready
+DXGIAdapterCache                         N/A                    Ready
+
+Folder: \Microsoft\Windows\DiskCleanup
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+SilentCleanup                            N/A                    Ready
+
+Folder: \Microsoft\Windows\DiskDiagnostic
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Microsoft-Windows-DiskDiagnosticDataColl N/A                    Ready
+Microsoft-Windows-DiskDiagnosticResolver N/A                    Disabled
+
+Folder: \Microsoft\Windows\DiskFootprint
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Diagnostics                              N/A                    Ready
+StorageSense                             N/A                    Ready
+
+Folder: \Microsoft\Windows\DUSM
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+dusmtask                                 N/A                    Ready
+
+Folder: \Microsoft\Windows\EDP
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+EDP App Launch Task                      N/A                    Ready
+EDP Auth Task                            N/A                    Ready
+EDP Inaccessible Credentials Task        N/A                    Ready
+StorageCardEncryption Task               N/A                    Ready
+
+Folder: \Microsoft\Windows\ExploitGuard
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+ExploitGuard MDM policy Refresh          N/A                    Ready
+
+Folder: \Microsoft\Windows\Feedback
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+INFO: There are no scheduled tasks presently available at your access level.
+
+Folder: \Microsoft\Windows\Feedback\Siuf
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+DmClient                                 N/A                    Ready
+DmClientOnScenarioDownload               N/A                    Ready
+
+Folder: \Microsoft\Windows\FileHistory
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+File History (maintenance mode)          N/A                    Ready
+
+Folder: \Microsoft\Windows\Flighting
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+INFO: There are no scheduled tasks presently available at your access level.
+
+Folder: \Microsoft\Windows\Flighting\FeatureConfig
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+ReconcileFeatures                        N/A                    Ready
+UsageDataFlushing                        N/A                    Ready
+UsageDataReporting                       N/A                    Ready
+
+Folder: \Microsoft\Windows\Flighting\OneSettings
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+RefreshCache                             11/08/2022 21:43:09    Ready
+
+Folder: \Microsoft\Windows\Input
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+LocalUserSyncDataAvailable               N/A                    Ready
+MouseSyncDataAvailable                   N/A                    Ready
+PenSyncDataAvailable                     N/A                    Ready
+TouchpadSyncDataAvailable                N/A                    Ready
+
+Folder: \Microsoft\Windows\InstallService
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+ScanForUpdates                           12/08/2022 19:58:09    Ready
+ScanForUpdatesAsUser                     N/A                    Ready
+WakeUpAndContinueUpdates                 N/A                    Disabled
+WakeUpAndScanForUpdates                  N/A                    Disabled
+
+Folder: \Microsoft\Windows\International
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Synchronize Language Settings            N/A                    Ready
+
+Folder: \Microsoft\Windows\LanguageComponentsInstaller
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Installation                             N/A                    Ready
+ReconcileLanguageResources               N/A                    Ready
+
+Folder: \Microsoft\Windows\Live
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+INFO: There are no scheduled tasks presently available at your access level.
+
+Folder: \Microsoft\Windows\Location
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Notifications                            N/A                    Ready
+WindowsActionDialog                      N/A                    Ready
+
+Folder: \Microsoft\Windows\Maintenance
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+WinSAT                                   N/A                    Ready
+
+Folder: \Microsoft\Windows\Management
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+INFO: There are no scheduled tasks presently available at your access level.
+
+Folder: \Microsoft\Windows\Management\Provisioning
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Cellular                                 N/A                    Ready
+Logon                                    N/A                    Ready
+Retry                                    N/A                    Disabled
+RunOnReboot                              N/A                    Disabled
+
+Folder: \Microsoft\Windows\Maps
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+MapsToastTask                            N/A                    Ready
+MapsUpdateTask                           N/A                    Disabled
+
+Folder: \Microsoft\Windows\MemoryDiagnostic
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+ProcessMemoryDiagnosticEvents            N/A                    Ready
+RunFullMemoryDiagnostic                  N/A                    Ready
+
+Folder: \Microsoft\Windows\Mobile Broadband Accounts
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+MNO Metadata Parser                      N/A                    Ready
+
+Folder: \Microsoft\Windows\MUI
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+LPRemove                                 N/A                    Ready
+
+Folder: \Microsoft\Windows\Multimedia
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+SystemSoundsService                      N/A                    Running
+
+Folder: \Microsoft\Windows\NetTrace
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+GatherNetworkInfo                        N/A                    Ready
+
+Folder: \Microsoft\Windows\NlaSvc
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+WiFiTask                                 N/A                    Ready
+
+Folder: \Microsoft\Windows\PLA
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+INFO: There are no scheduled tasks presently available at your access level.
+
+Folder: \Microsoft\Windows\Plug and Play
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Device Install Group Policy              N/A                    Ready
+Device Install Reboot Required           N/A                    Ready
+Sysprep Generalize Drivers               N/A                    Ready
+
+Folder: \Microsoft\Windows\Power Efficiency Diagnostics
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+AnalyzeSystem                            N/A                    Ready
+
+Folder: \Microsoft\Windows\Printing
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+EduPrintProv                             N/A                    Ready
+
+Folder: \Microsoft\Windows\RecoveryEnvironment
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+VerifyWinRE                              N/A                    Ready
+
+Folder: \Microsoft\Windows\Registry
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+RegIdleBackup                            N/A                    Ready
+
+Folder: \Microsoft\Windows\Servicing
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+StartComponentCleanup                    N/A                    Ready
+
+Folder: \Microsoft\Windows\SettingSync
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+BackgroundUploadTask                     N/A                    Ready
+NetworkStateChangeTask                   N/A                    Ready
+
+Folder: \Microsoft\Windows\Setup
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+SetupCleanupTask                         15/08/2022 06:00:00    Ready
+
+Folder: \Microsoft\Windows\SharedPC
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Account Cleanup                          N/A                    Disabled
+
+Folder: \Microsoft\Windows\Shell
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+CreateObjectTask                         N/A                    Ready
+FamilySafetyMonitor                      N/A                    Ready
+FamilySafetyRefreshTask                  N/A                    Ready
+IndexerAutomaticMaintenance              N/A                    Ready
+
+Folder: \Microsoft\Windows\SMB
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+UninstallSMB1ClientTask                  N/A                    Ready
+UninstallSMB1ServerTask                  N/A                    Ready
+
+Folder: \Microsoft\Windows\SoftwareProtectionPlatform
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+SvcRestartTaskLogon                      N/A                    Ready
+
+Folder: \Microsoft\Windows\SpacePort
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+SpaceAgentTask                           N/A                    Ready
+SpaceManagerTask                         N/A                    Ready
+
+Folder: \Microsoft\Windows\Speech
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+HeadsetButtonPress                       N/A                    Ready
+
+Folder: \Microsoft\Windows\StateRepository
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+MaintenanceTasks                         N/A                    Ready
+
+Folder: \Microsoft\Windows\Storage Tiers Management
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Storage Tiers Management Initialization  N/A                    Ready
+Storage Tiers Optimization               N/A                    Disabled
+
+Folder: \Microsoft\Windows\Subscription
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+EnableLicenseAcquisition                 N/A                    Ready
+LicenseAcquisition                       N/A                    Disabled
+
+Folder: \Microsoft\Windows\Sysmain
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+HybridDriveCachePrepopulate              N/A                    Disabled
+HybridDriveCacheRebalance                N/A                    Disabled
+ResPriStaticDbSync                       N/A                    Ready
+WsSwapAssessmentTask                     N/A                    Ready
+
+Folder: \Microsoft\Windows\SystemRestore
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+SR                                       N/A                    Ready
+
+Folder: \Microsoft\Windows\Task Manager
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Interactive                              N/A                    Ready
+
+Folder: \Microsoft\Windows\TextServicesFramework
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+MsCtfMonitor                             N/A                    Ready
+
+Folder: \Microsoft\Windows\Time Synchronization
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+ForceSynchronizeTime                     N/A                    Ready
+SynchronizeTime                          N/A                    Ready
+
+Folder: \Microsoft\Windows\Time Zone
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+SynchronizeTimeZone                      N/A                    Ready
+
+Folder: \Microsoft\Windows\UNP
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+RunUpdateNotificationMgr                 N/A                    Disabled
+
+Folder: \Microsoft\Windows\UPnP
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+UPnPHostConfig                           N/A                    Ready
+
+Folder: \Microsoft\Windows\USB
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Usb-Notifications                        N/A                    Ready
+
+Folder: \Microsoft\Windows\WCM
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+WiFiTask                                 N/A                    Ready
+
+Folder: \Microsoft\Windows\WDI
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+ResolutionHost                           N/A                    Ready
+
+Folder: \Microsoft\Windows\Windows Defender
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Windows Defender Cache Maintenance       N/A                    Ready
+Windows Defender Cleanup                 N/A                    Ready
+Windows Defender Scheduled Scan          N/A                    Ready
+Windows Defender Verification            N/A                    Ready
+
+Folder: \Microsoft\Windows\Windows Error Reporting
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+QueueReporting                           11/08/2022 19:31:09    Ready
+
+Folder: \Microsoft\Windows\Windows Filtering Platform
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+BfeOnServiceStartTypeChange              N/A                    Ready
+
+Folder: \Microsoft\Windows\Windows Media Sharing
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+UpdateLibrary                            N/A                    Ready
+
+Folder: \Microsoft\Windows\WindowsColorSystem
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Calibration Loader                       N/A                    Ready
+
+Folder: \Microsoft\Windows\WindowsUpdate
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Scheduled Start                          11/08/2022 21:26:58    Ready
+
+Folder: \Microsoft\Windows\WindowsUpdate\RUXIM
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+RUXIMDisplay                             12/08/2022 12:57:30    Ready
+RUXIMSync                                13/08/2022 01:27:41    Ready
+
+Folder: \Microsoft\Windows\Wininet
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+CacheTask                                N/A                    Running
+
+Folder: \Microsoft\Windows\WlanSvc
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+CDSSync                                  N/A                    Ready
+
+Folder: \Microsoft\Windows\Work Folders
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Work Folders Logon Synchronization       N/A                    Ready
+Work Folders Maintenance Work            N/A                    Ready
+
+Folder: \Microsoft\Windows\Workplace Join
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Automatic-Device-Join                    N/A                    Disabled
+Device-Sync                              N/A                    Disabled
+Recovery-Check                           N/A                    Disabled
+
+Folder: \Microsoft\Windows\WwanSvc
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+NotificationTask                         N/A                    Ready
+OobeDiscovery                            N/A                    Ready
+
+Folder: \Microsoft\XblGameSave
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+XblGameSaveTask                          N/A                    Ready
+
+Folder: \Mozilla
+TaskName                                 Next Run Time          Status
+======================================== ====================== ===============
+Firefox Background Update 308046B0AF4A39 11/08/2022 23:02:11    Ready
+Firefox Default Browser Agent 308046B0AF 12/08/2022 16:01:15    Ready
+
+C:\Users\afysa>tree
+Folder PATH listing
+Volume serial number is 024C-B7A7
+C:.
+├───3D Objects
+├───ansel
+├───Contacts
+├───Documents
+├───Downloads
+│   ├───Compressed
+│   │   └───Social-Club-Setup
+│   ├───DirectX Update
+│   ├───Documents
+│   ├───IDM.6.38.b.25.kuyhAa.Me
+│   │   └───IDM.6.38.b.25.kuyhAa.Me
+│   │       └───Jamu
+│   ├───IObit Driver Booster Pro 9.2.0.178.kuyhAa
+│   │   └───IObit Driver Booster Pro 9.2.0.178.kuyhAa
+│   ├───Music
+│   ├───Programs
+│   ├───Siberuang.BalsaMockups 3.5.17
+│   │   └───Siberuang.com - Balsamiq Mockups 3.5.17
+│   ├───URAAA!!!
+│   │   └───URAAA!!!
+│   │       ├───APLIKASI
+│   │       │   └───ptsinardaku
+│   │       │       └───ptsinardaku
+│   │       │           ├───application
+│   │       │           │   ├───cache
+│   │       │           │   ├───config
+│   │       │           │   ├───controllers
+│   │       │           │   ├───core
+│   │       │           │   ├───helpers
+│   │       │           │   ├───hooks
+│   │       │           │   ├───language
+│   │       │           │   │   └───english
+│   │       │           │   ├───libraries
+│   │       │           │   ├───logs
+│   │       │           │   ├───models
+│   │       │           │   ├───third_party
+│   │       │           │   └───views
+│   │       │           │       ├───administrator
+│   │       │           │       ├───auth
+│   │       │           │       ├───errors
+│   │       │           │       │   ├───cli
+│   │       │           │       │   └───html
+│   │       │           │       └───templates
+│   │       │           ├───assets
+│   │       │           │   ├───adminlte
+│   │       │           │   │   ├───.github
+│   │       │           │   │   │   └───ISSUE_TEMPLATE
+│   │       │           │   │   ├───build
+│   │       │           │   │   │   ├───config
+│   │       │           │   │   │   ├───js
+│   │       │           │   │   │   ├───npm
+│   │       │           │   │   │   └───scss
+│   │       │           │   │   │       ├───mixins
+│   │       │           │   │   │       ├───pages
+│   │       │           │   │   │       ├───parts
+│   │       │           │   │   │       └───plugins
+│   │       │           │   │   ├───dist
+│   │       │           │   │   │   ├───css
+│   │       │           │   │   │   │   └───alt
+│   │       │           │   │   │   ├───img
+│   │       │           │   │   │   │   └───credit
+│   │       │           │   │   │   └───js
+│   │       │           │   │   │       └───pages
+│   │       │           │   │   ├───docs
+│   │       │           │   │   │   ├───assets
+│   │       │           │   │   │   │   ├───css
+│   │       │           │   │   │   │   │   └───alt
+│   │       │           │   │   │   │   ├───img
+│   │       │           │   │   │   │   ├───js
+│   │       │           │   │   │   │   │   └───pages
+│   │       │           │   │   │   │   └───plugins
+│   │       │           │   │   │   │       ├───bootstrap
+│   │       │           │   │   │   │       │   └───js
+│   │       │           │   │   │   │       ├───fontawesome-free
+│   │       │           │   │   │   │       │   ├───css
+│   │       │           │   │   │   │       │   └───webfonts
+│   │       │           │   │   │   │       ├───jquery
+│   │       │           │   │   │   │       ├───overlayScrollbars
+│   │       │           │   │   │   │       │   ├───css
+│   │       │           │   │   │   │       │   └───js
+│   │       │           │   │   │   │       └───popper
+│   │       │           │   │   │   │           ├───esm
+│   │       │           │   │   │   │           └───umd
+│   │       │           │   │   │   ├───components
+│   │       │           │   │   │   ├───javascript
+│   │       │           │   │   │   ├───_includes
+│   │       │           │   │   │   └───_layouts
+│   │       │           │   │   ├───pages
+│   │       │           │   │   │   ├───charts
+│   │       │           │   │   │   ├───examples
+│   │       │           │   │   │   ├───forms
+│   │       │           │   │   │   ├───layout
+│   │       │           │   │   │   ├───mailbox
+│   │       │           │   │   │   ├───tables
+│   │       │           │   │   │   └───UI
+│   │       │           │   │   └───plugins
+│   │       │           │   │       ├───bootstrap
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───bootstrap-colorpicker
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───bootstrap-slider
+│   │       │           │   │       │   └───css
+│   │       │           │   │       ├───bootstrap-switch
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   │   ├───bootstrap2
+│   │       │           │   │       │   │   └───bootstrap3
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───bootstrap4-duallistbox
+│   │       │           │   │       ├───bs-custom-file-input
+│   │       │           │   │       ├───chart.js
+│   │       │           │   │       ├───datatables
+│   │       │           │   │       ├───datatables-autofill
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───datatables-bs4
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───datatables-buttons
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───datatables-colreorder
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───datatables-fixedcolumns
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───datatables-fixedheader
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───datatables-keytable
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───datatables-responsive
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───datatables-rowgroup
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───datatables-rowreorder
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───datatables-scroller
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───datatables-select
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───daterangepicker
+│   │       │           │   │       │   ├───example
+│   │       │           │   │       │   │   ├───amd
+│   │       │           │   │       │   │   └───browserify
+│   │       │           │   │       │   └───website
+│   │       │           │   │       ├───ekko-lightbox
+│   │       │           │   │       ├───fastclick
+│   │       │           │   │       ├───filterizr
+│   │       │           │   │       │   ├───config
+│   │       │           │   │       │   ├───FilterContainer
+│   │       │           │   │       │   ├───FilterItem
+│   │       │           │   │       │   ├───FilterItems
+│   │       │           │   │       │   ├───Filterizr
+│   │       │           │   │       │   ├───FilterizrOptions
+│   │       │           │   │       │   ├───layouts
+│   │       │           │   │       │   ├───makeLayoutPositions
+│   │       │           │   │       │   ├───Spinner
+│   │       │           │   │       │   ├───types
+│   │       │           │   │       │   │   └───interfaces
+│   │       │           │   │       │   └───utils
+│   │       │           │   │       ├───flag-icon-css
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───flags
+│   │       │           │   │       │       ├───1x1
+│   │       │           │   │       │       └───4x3
+│   │       │           │   │       ├───flot
+│   │       │           │   │       ├───flot-old
+│   │       │           │   │       ├───fontawesome-free
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───webfonts
+│   │       │           │   │       ├───fullcalendar
+│   │       │           │   │       │   └───locales
+│   │       │           │   │       ├───fullcalendar-bootstrap
+│   │       │           │   │       ├───fullcalendar-daygrid
+│   │       │           │   │       ├───fullcalendar-interaction
+│   │       │           │   │       ├───fullcalendar-timegrid
+│   │       │           │   │       ├───icheck-bootstrap
+│   │       │           │   │       ├───inputmask
+│   │       │           │   │       │   ├───bindings
+│   │       │           │   │       │   ├───inputmask
+│   │       │           │   │       │   │   ├───bindings
+│   │       │           │   │       │   │   ├───dependencyLibs
+│   │       │           │   │       │   │   └───global
+│   │       │           │   │       │   └───min
+│   │       │           │   │       │       └───inputmask
+│   │       │           │   │       │           ├───bindings
+│   │       │           │   │       │           ├───dependencyLibs
+│   │       │           │   │       │           └───global
+│   │       │           │   │       ├───ion-rangeslider
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   ├───js
+│   │       │           │   │       │   └───less
+│   │       │           │   │       │       └───skins
+│   │       │           │   │       ├───jquery
+│   │       │           │   │       ├───jquery-knob
+│   │       │           │   │       ├───jquery-mapael
+│   │       │           │   │       │   └───maps
+│   │       │           │   │       ├───jquery-mousewheel
+│   │       │           │   │       ├───jquery-ui
+│   │       │           │   │       │   ├───external
+│   │       │           │   │       │   │   └───jquery
+│   │       │           │   │       │   └───images
+│   │       │           │   │       ├───jquery-validation
+│   │       │           │   │       │   └───localization
+│   │       │           │   │       ├───jqvmap
+│   │       │           │   │       │   └───maps
+│   │       │           │   │       │       └───continents
+│   │       │           │   │       ├───jsgrid
+│   │       │           │   │       │   ├───demos
+│   │       │           │   │       │   └───i18n
+│   │       │           │   │       ├───jszip
+│   │       │           │   │       ├───moment
+│   │       │           │   │       │   └───locale
+│   │       │           │   │       ├───overlayScrollbars
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       ├───pace-progress
+│   │       │           │   │       │   └───themes
+│   │       │           │   │       │       ├───black
+│   │       │           │   │       │       ├───blue
+│   │       │           │   │       │       ├───green
+│   │       │           │   │       │       ├───orange
+│   │       │           │   │       │       ├───pink
+│   │       │           │   │       │       ├───purple
+│   │       │           │   │       │       ├───red
+│   │       │           │   │       │       ├───silver
+│   │       │           │   │       │       ├───white
+│   │       │           │   │       │       └───yellow
+│   │       │           │   │       ├───pdfmake
+│   │       │           │   │       ├───popper
+│   │       │           │   │       │   ├───esm
+│   │       │           │   │       │   └───umd
+│   │       │           │   │       ├───raphael
+│   │       │           │   │       │   └───dev
+│   │       │           │   │       │       └───test
+│   │       │           │   │       │           ├───svg
+│   │       │           │   │       │           └───vml
+│   │       │           │   │       ├───select2
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       │       └───i18n
+│   │       │           │   │       ├───select2-bootstrap4-theme
+│   │       │           │   │       ├───sparklines
+│   │       │           │   │       ├───summernote
+│   │       │           │   │       │   ├───font
+│   │       │           │   │       │   ├───lang
+│   │       │           │   │       │   └───plugin
+│   │       │           │   │       │       ├───databasic
+│   │       │           │   │       │       ├───hello
+│   │       │           │   │       │       └───specialchars
+│   │       │           │   │       ├───sweetalert2
+│   │       │           │   │       ├───sweetalert2-theme-bootstrap-4
+│   │       │           │   │       ├───tempusdominus-bootstrap-4
+│   │       │           │   │       │   ├───css
+│   │       │           │   │       │   └───js
+│   │       │           │   │       └───toastr
+│   │       │           │   ├───source
+│   │       │           │   │   └───image
+│   │       │           │   │       ├───admin
+│   │       │           │   │       │   ├───background
+│   │       │           │   │       │   ├───logo
+│   │       │           │   │       │   ├───photo
+│   │       │           │   │       │   └───profile
+│   │       │           │   │       └───front
+│   │       │           │   └───sweetalert
+│   │       │           │       ├───bin
+│   │       │           │       ├───dist
+│   │       │           │       └───src
+│   │       │           │           ├───enhancers
+│   │       │           │           ├───instanceMethods
+│   │       │           │           ├───scss
+│   │       │           │           ├───staticMethods
+│   │       │           │           └───utils
+│   │       │           │               └───dom
+│   │       │           │                   └───renderers
+│   │       │           ├───sql database import
+│   │       │           ├───system
+│   │       │           │   ├───core
+│   │       │           │   │   └───compat
+│   │       │           │   ├───database
+│   │       │           │   │   └───drivers
+│   │       │           │   │       ├───cubrid
+│   │       │           │   │       ├───ibase
+│   │       │           │   │       ├───mssql
+│   │       │           │   │       ├───mysql
+│   │       │           │   │       ├───mysqli
+│   │       │           │   │       ├───oci8
+│   │       │           │   │       ├───odbc
+│   │       │           │   │       ├───pdo
+│   │       │           │   │       │   └───subdrivers
+│   │       │           │   │       ├───postgre
+│   │       │           │   │       ├───sqlite
+│   │       │           │   │       ├───sqlite3
+│   │       │           │   │       └───sqlsrv
+│   │       │           │   ├───fonts
+│   │       │           │   ├───helpers
+│   │       │           │   ├───language
+│   │       │           │   │   └───english
+│   │       │           │   └───libraries
+│   │       │           │       ├───Cache
+│   │       │           │       │   └───drivers
+│   │       │           │       ├───Javascript
+│   │       │           │       └───Session
+│   │       │           │           └───drivers
+│   │       │           └───user_guide
+│   │       │               ├───contributing
+│   │       │               ├───database
+│   │       │               ├───documentation
+│   │       │               ├───general
+│   │       │               ├───helpers
+│   │       │               ├───installation
+│   │       │               ├───libraries
+│   │       │               ├───overview
+│   │       │               ├───tutorial
+│   │       │               ├───_downloads
+│   │       │               ├───_images
+│   │       │               └───_static
+│   │       │                   ├───css
+│   │       │                   ├───fonts
+│   │       │                   ├───images
+│   │       │                   └───js
+│   │       ├───DAFTAR SIDANG KOLOKIUM
+│   │       │   └───FILE MENTAHAN
+│   │       ├───DAFTAR SIDANG SKRIPSI
+│   │       │   └───FILE MENTAHAN
+│   │       ├───DIAGRAM UML
+│   │       │   └───Diagram
+│   │       │       └───Diagram
+│   │       ├───JURNAL
+│   │       ├───PRESENTASI SIDANG
+│   │       ├───PROPOSAL
+│   │       │   └───ACC PROPOSAL
+│   │       ├───REVISI
+│   │       │   └───REVISI
+│   │       ├───SKRIPSI BELUM FINAL ;(
+│   │       │   └───SKRIPSI
+│   │       └───SKRIPSI UDAH FINAL ;)
+│   ├───Video
+│   ├───xampp-windows-x64-7.3.3-0-VC15-installer
+│   └───[BAGAS31] Sublime Text 3 (64-bit)
+│       └───[BAGAS31] Sublime Text 3 (64-bit)
+├───Favorites
+│   └───Links
+├───Links
+├───Music
+│   └───n-Track Studio
+│       └───Unsaved new song
+│           └───Audio
+│               └───.ImageCache
+├───OneDrive
+│   ├───Desktop
+│   │   └───UML
+│   ├───Documents
+│   │   ├───Adobe
+│   │   │   ├───Adobe Media Encoder
+│   │   │   │   └───10.0
+│   │   │   │       └───Presets
+│   │   │   └───Premiere Pro
+│   │   │       └───10.0
+│   │   │           └───Profile-afysa
+│   │   │               ├───ArchivedLayouts
+│   │   │               ├───Layouts
+│   │   │               ├───Settings
+│   │   │               │   ├───Overlay Presets
+│   │   │               │   ├───Source Patcher Presets
+│   │   │               │   └───Track Height Presets
+│   │   │               └───Win
+│   │   ├───Battlefield V
+│   │   │   ├───Screenshots
+│   │   │   ├───settings
+│   │   │   ├───Temp
+│   │   │   └───twinkle
+│   │   │       ├───kvstore
+│   │   │       └───temp
+│   │   │           └───videoBufferHttpTemp
+│   │   ├───Custom Office Templates
+│   │   ├───My Games
+│   │   │   └───Mercenaries 2
+│   │   │       └───SaveGames
+│   │   ├───OpenIV
+│   │   │   └───GTA V
+│   │   │       └───Strings
+│   │   └───Rockstar Games
+│   │       ├───GTA III Definitive Edition
+│   │       │   ├───Config
+│   │       │   │   └───WindowsNoEditor
+│   │       │   ├───GTA3
+│   │       │   ├───Logs
+│   │       │   │   └───NGX
+│   │       │   │       ├───NGX_2022.04.27-22.22.38_258C85C348771603E017E4B0463DF9A6
+│   │       │   │       └───NGX_2022.04.30-16.40.22_1EB32DA5433BE4CB45C0C59B254E3645
+│   │       │   └───SaveGames
+│   │       ├───GTA San Andreas Definitive Edition
+│   │       │   ├───Config
+│   │       │   │   └───WindowsNoEditor
+│   │       │   ├───GTASA
+│   │       │   ├───Logs
+│   │       │   │   └───NGX
+│   │       │   │       ├───NGX_2022.04.27-21.34.34_78CEAEAC4602AFC75A1F428605F97159
+│   │       │   │       ├───NGX_2022.04.29-06.06.12_ABCB17814FA9889466893EA6F6706B66
+│   │       │   │       └───NGX_2022.04.30-16.29.14_8847267B453585FAAE1808AAE1FA3B5C
+│   │       │   └───SaveGames
+│   │       ├───GTA V
+│   │       │   └───User Music
+│   │       └───GTA Vice City Definitive Edition
+│   │           ├───Config
+│   │           │   └───WindowsNoEditor
+│   │           ├───Logs
+│   │           │   └───NGX
+│   │           │       ├───NGX_2022.04.27-22.00.47_8F14ED6B4F5D3D7910DF43854BB9C4A4
+│   │           │       └───NGX_2022.04.29-05.57.40_5D44DF964C8AA97C3D6465A565E52EA0
+│   │           ├───SaveGames
+│   │           └───ViceCity
+│   └───Pictures
+│       ├───Camera Roll
+│       ├───Saved Pictures
+│       └───Screenshots
+├───Pictures
+├───Saved Games
+├───Searches
+└───Videos
+    └───Captures
+
+C:\Users\afysa>tzutil
+Windows Time Zone Utility
+
+Usage:
+TZUTIL </? | /g | /s TimeZoneID[_dstoff] | /l>
+
+Parameters:
+    /? Displays usage information.
+
+    /g Displays the current time zone ID.
+
+    /s TimeZoneID[_dstoff]
+       Sets the current time zone using the specified time zone ID.
+       The _dstoff suffix disables Daylight Saving Time adjustments
+       for the time zone (where applicable).
+
+    /l Lists all valid time zone IDs and display names. The output will
+       be:
+           <display name>
+           <time zone ID>
+
+Examples:
+    TZUTIL /g
+    TZUTIL /s "Pacific Standard Time"
+    TZUTIL /s "Pacific Standard Time_dstoff"
+
+Remarks:
+    An exit code of 0 indicates the command completed successfully.
+
+C:\Users\afysa>fsutil
+---- Commands Supported ----
+
+8dot3name         8dot3name management
+behavior          Control file system behavior
+dax               Dax volume management
+dirty             Manage volume dirty bit
+file              File specific commands
+fsInfo            File system information
+hardlink          Hardlink management
+objectID          Object ID management
+quota             Quota management
+repair            Self healing management
+reparsePoint      Reparse point management
+storageReserve    Storage Reserve management
+resource          Transactional Resource Manager management
+sparse            Sparse file control
+tiering           Storage tiering property management
+transaction       Transaction management
+usn               USN management
+volume            Volume management
+wim               Transparent wim hosting management
+
+C:\Users\afysa>bitsadmin
+
+BITSADMIN version 3.0
+BITS administration utility.
+(C) Copyright Microsoft Corp.
+
+USAGE: BITSADMIN [/RAWRETURN] [/WRAP | /NOWRAP] command
+The following commands are available:
+
+/HELP           Prints this help
+/?              Prints this help
+/UTIL /?        Prints the list of utilities commands
+/PEERCACHING /?   Prints the list of commands to manage Peercaching
+/CACHE /?       Prints the list of cache management commands
+/PEERS /?       Prints the list of peer management commands
+
+/LIST    [/ALLUSERS] [/VERBOSE]     List the jobs
+/MONITOR [/ALLUSERS] [/REFRESH sec] Monitors the copy manager
+/RESET   [/ALLUSERS]                Deletes all jobs in the manager
+
+/TRANSFER <job name> [type] [/PRIORITY priority] [/ACLFLAGS flags] [/DYNAMIC]
+          remote_url local_name
+    Transfers one of more files.
+    [type] may be /DOWNLOAD or /UPLOAD; default is download
+    Multiple URL/file pairs may be specified.
+    Unlike most commands, <job name> may only be a name and not a GUID.
+    /DYNAMIC configures the job with BITS_JOB_PROPERTY_DYNAMIC_CONTENT, which relaxes the server-side requirements.
+
+/CREATE [type] <job name>               Creates a job
+    [type] may be /DOWNLOAD, /UPLOAD, or /UPLOAD-REPLY; default is download
+    Unlike most commands, <job name> may only be a name and not a GUID.
+
+/INFO <job> [/VERBOSE]                   Displays information about the job
+/ADDFILE <job> <remote_url> <local_name> Adds a file to the job
+/ADDFILESET <job> <textfile>             Adds multiple files to the job
+   Each line of <textfile> lists a file's remote name and local name, separated
+   by spaces.  A line beginning with '#' is treated as a comment.
+   Once the file set is read into memory, the contents are added to the job.
+
+/ADDFILEWITHRANGES  <job> <remote_url> <local_name range_list>
+   Like /ADDFILE, but BITS will read only selected byte ranges of the URL.
+   range_list is a comma-delimited series of offset and length pairs.
+   For example,
+
+       0:100,2000:100,5000:eof
+
+   instructs BITS to read 100 bytes starting at offset zero, 100 bytes starting
+   at offset 2000, and the remainder of the URL starting at offset 5000.
+
+/REPLACEREMOTEPREFIX <job> <old_prefix> <new_prefix>
+    All files whose URL begins with <old_prefix> are changed to use <new_prefix>
+
+Note that BITS currently supports HTTP/HTTPS downloads and uploads.
+It also supports UNC paths and file:// paths as URLS
+
+/LISTFILES <job>                     Lists the files in the job
+/SUSPEND <job>                       Suspends the job
+/RESUME <job>                        Resumes the job
+/CANCEL <job>                        Cancels the job
+/COMPLETE <job>                      Completes the job
+
+/GETTYPE <job>                       Retrieves the job type
+/GETACLFLAGS <job>                   Retrieves the ACL propagation flags
+
+/SETACLFLAGS <job> <ACL_flags>       Sets the ACL propagation flags for the job
+  O - OWNER       G - GROUP
+  D - DACL        S - SACL
+
+  Examples:
+      bitsadmin /setaclflags MyJob OGDS
+      bitsadmin /setaclflags MyJob OGD
+
+/GETBYTESTOTAL <job>                 Retrieves the size of the job
+/GETBYTESTRANSFERRED <job>           Retrieves the number of bytes transferred
+/GETFILESTOTAL <job>                 Retrieves the number of files in the job
+/GETFILESTRANSFERRED <job>           Retrieves the number of files transferred
+/GETCREATIONTIME <job>               Retrieves the job creation time
+/GETMODIFICATIONTIME <job>           Retrieves the job modification time
+/GETCOMPLETIONTIME <job>             Retrieves the job completion time
+/GETSTATE <job>                      Retrieves the job state
+/GETERROR <job>                      Retrieves detailed error information
+/GETOWNER <job>                      Retrieves the job owner
+/GETDISPLAYNAME <job>                Retrieves the job display name
+/SETDISPLAYNAME <job> <display_name> Sets the job display name
+/GETDESCRIPTION <job>                Retrieves the job description
+/SETDESCRIPTION <job> <description>  Sets the job description
+/GETPRIORITY    <job>                Retrieves the job priority
+/SETPRIORITY    <job> <priority>     Sets the job priority
+   Priority usage choices:
+      FOREGROUND
+      HIGH
+      NORMAL
+      LOW
+/GETNOTIFYFLAGS <job>                 Retrieves the notify flags
+/SETNOTIFYFLAGS <job> <notify_flags>  Sets the notify flags
+    For more help on this option, please refer to the MSDN help page for SetNotifyFlags/GETNOTIFYINTERFACE <job>             Determines if notify interface is registered
+/GETMINRETRYDELAY <job>               Retrieves the retry delay in seconds
+/SETMINRETRYDELAY <job> <retry_delay> Sets the retry delay in seconds
+/GETNOPROGRESSTIMEOUT <job>           Retrieves the no progress timeout in seconds
+/SETNOPROGRESSTIMEOUT <job> <timeout> Sets the no progress timeout in seconds
+/GETMAXDOWNLOADTIME <job>             Retrieves the download timeout in seconds
+/SETMAXDOWNLOADTIME <job> <timeout>   Sets the download timeout in seconds
+/GETERRORCOUNT <job>                  Retrieves an error count for the job
+
+/SETPROXYSETTINGS <job> <usage>      Sets the proxy usage
+   usage choices:
+    PRECONFIG   - Use the owner's default Internet settings.
+    AUTODETECT  - Force autodetection of proxy.
+    NO_PROXY    - Do not use a proxy server.
+    OVERRIDE    - Use an explicit proxy list and bypass list.
+                  Must be followed by a proxy list and a proxy bypass list.
+                  NULL or "" may be used for an empty proxy bypass list.
+  Examples:
+      bitsadmin /setproxysettings MyJob PRECONFIG
+      bitsadmin /setproxysettings MyJob AUTODETECT
+      bitsadmin /setproxysettings MyJob NO_PROXY
+      bitsadmin /setproxysettings MyJob OVERRIDE proxy1:80 "<local>"
+      bitsadmin /setproxysettings MyJob OVERRIDE proxy1,proxy2,proxy3 NULL
+
+/GETPROXYUSAGE <job>                 Retrieves the proxy usage setting
+/GETPROXYLIST <job>                  Retrieves the proxy list
+/GETPROXYBYPASSLIST <job>            Retrieves the proxy bypass list
+
+/TAKEOWNERSHIP <job>                 Take ownership of the job
+
+/SETNOTIFYCMDLINE <job> <program_name> [program_parameters]
+    Sets a program to execute for notification, and optionally parameters.
+    The program name and parameters can be NULL.
+    IMPORTANT: if parameters are non-NULL, then the program name should be the
+               first parameter.
+
+  Examples:
+    bitsadmin /SetNotifyCmdLine MyJob c:\winnt\system32\notepad.exe  NULL
+    bitsadmin /SetNotifyCmdLine MyJob c:\callback.exe "c:\callback.exe parm1 parm2"
+    bitsadmin /SetNotifyCmdLine MyJob NULL NULL
+
+/GETNOTIFYCMDLINE <job>              Returns the job's notification command line
+
+/SETCREDENTIALS <job> <target> <scheme> <username> <password>
+  Adds credentials to a job.
+  <target> may be either SERVER or PROXY
+  <scheme> may be BASIC, DIGEST, NTLM, NEGOTIATE, or PASSPORT.
+
+/REMOVECREDENTIALS <job> <target> <scheme>
+  Removes credentials from a job.
+/GETCUSTOMHEADERS <job>                           Gets the Custom HTTP Headers
+/SETCUSTOMHEADERS <job> <header1> <header2> <...> Sets the Custom HTTP Headers
+/MAKECUSTOMHEADERSWRITEONLY <job>                 Make a job's Custom HTTP Headers write-only (cannot be undone).
+
+/GETHTTPMETHOD <job>                           Gets the HTTP verb to use.
+/SETHTTPMETHOD <job> <HTTPMethod>              Sets the HTTP verb to use.
+
+/GETCLIENTCERTIFICATE <job>                       Gets the job's Client Certificate Information
+/SETCLIENTCERTIFICATEBYID <job> <store_location> <store_name> <hexa-decimal_cert_id>
+  Sets a client authentication certificate to a job.
+  <store_location> may be
+        1(CURRENT_USER), 2(LOCAL_MACHINE), 3(CURRENT_SERVICE),
+        4(SERVICES), 5(USERS), 6(CURRENT_USER_GROUP_POLICY),
+        7(LOCAL_MACHINE_GROUP_POLICY) or 8(LOCAL_MACHINE_ENTERPRISE).
+
+/SETCLIENTCERTIFICATEBYNAME <job> <store_location> <store_name> <subject_name>
+  Sets a client authentication certificate to a job.
+  <store_location> may be
+        1(CURRENT_USER), 2(LOCAL_MACHINE), 3(CURRENT_SERVICE),
+        4(SERVICES), 5(USERS), 6(CURRENT_USER_GROUP_POLICY),
+        7(LOCAL_MACHINE_GROUP_POLICY) or 8(LOCAL_MACHINE_ENTERPRISE).
+
+/REMOVECLIENTCERTIFICATE <job>                Removes the Client Certificate Information from the job
+
+/SETSECURITYFLAGS <job> <value>
+   Sets the HTTP security flags for URL redirection and checks performed on the server certificate during the transfer.
+   The value is an unsigned integer with the following interpretation for the bits in the binary representation.
+     Enable CRL Check                                 : Set the least significant bit
+     Ignore invalid common name in server certificate : Set the 2nd bit from right
+     Ignore invalid date in  server certificate       : Set the 3rd bit from right
+     Ignore invalid certificate authority in server
+       certificate                                    : Set the 4th bit from right
+     Ignore invalid usage of certificate              : Set the 5th bit from right
+     Redirection policy                               : Controlled by the 9th-11th bits from right
+         0,0,0  - Redirects will be automatically allowed.
+         0,0,1  - Remote name in the IBackgroundCopyFile interface will be updated if a redirect occurs.
+         0,1,0  - BITS will fail the job if a redirect occurs.
+
+     Allow redirection from HTTPS to HTTP             : Set the 12th bit from right
+
+/GETSECURITYFLAGS <job>
+   Reports the HTTP security flags for URL redirection and checks performed on the server certificate during the transfer.
+
+/SETVALIDATIONSTATE  <job>  <file-index> <true|false>
+      <file-index> starts from 0
+    Sets the content-validation state of the given file within the job.
+
+/GETVALIDATIONSTATE  <job>  <file-index>
+      <file-index> starts from 0
+    Reports the content-validation state of the given file within the job.
+
+/GETTEMPORARYNAME  <job>  <file-index>
+      <file-index> starts from 0
+    Reports the temporary filename of the given file within the job.
+
+The following options control peercaching of a particular job:
+
+/SETPEERCACHINGFLAGS  <job> <value>
+    Sets the flags for the job's peercaching behavior.
+    The value is an unsigned integer with the following interpretation for the bits in the binary representation.
+        Allow the job's data to be downloaded from a peer : Set the least significant bit
+        Allow the job's data to be served to peers        : Set the 2nd bit from right
+
+/GETPEERCACHINGFLAGS  <job>
+    Reports the flags for the job's peercaching behavior.
+
+The following options are valid for UPLOAD-REPLY jobs only:
+
+/GETREPLYFILENAME <job>        Gets the path of the file containing the server reply
+/SETREPLYFILENAME <job> <path> Sets the path of the file containing the server reply
+/GETREPLYPROGRESS <job>        Gets the size and progress of the server reply
+/GETREPLYDATA     <job>        Dumps the server's reply data in hex format
+
+/SETHELPERTOKEN <job>          Sets the current command prompt's primary token as a job's helper token
+/GETHELPERTOKENSID <job>       Reports the user account SID of a job's helper token, if one is set
+
+/SETHELPERTOKENFLAGS <job> <flags>
+    Sets the helper token usage flags for a job. Possible values are:
+        1 - The helper token is used when accessing the local filesystem.
+        2 - The helper token is used when accessing the network.
+        3 - The helper token is used when accessing both the local filesystem and the network.
+
+/GETHELPERTOKENFLAGS <job>
+    Reports a job's helper token usage flags.
+
+/GETPEERSTATS <job> <file-index>
+    <file-index> starts from 0
+    Reports statistics about the amount of data downloaded from peers and origin servers for a specific file within a job.
+
+The following options can be placed before the command:
+/RAWRETURN                     Return data more suitable for parsing
+/WRAP                          Wrap output around console (default)
+/NOWRAP                        Don't wrap output around console
+
+The /RAWRETURN option strips new line characters and formatting.
+It is recognized by the /CREATE and /GET* commands.
+
+Commands that take a <job> parameter will accept either a job name or a job ID
+GUID inside braces.  BITSADMIN reports an error if a name is ambiguous.
